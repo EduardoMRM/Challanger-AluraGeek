@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    font-family: "Press Start 2P";
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3b008dda;
+    gap: 13px;
+}
+
+header img {
+    width: 40px;
+    height: 40px;
+}
+
+header p {
+    color: #E5E5E5;
+    font-size: 1.2rem;
+}
+
+.produtos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 50px;
+    gap: 10px;
+}
+
+.produtos__exibicao {
+    display: flex;
+    flex-direction: column;
+}
+
+.produtos__exibicao-texto {
+    font-size: 24px;
+    text-align: center;
+}
+
+.produtos__exibicao-conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    gap: 8px;
+    max-height: 816px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.produtos__exibicao-conteudo::-webkit-scrollbar {
+    width: 5px;
+}
+
+.produtos__exibicao-conteudo::-webkit-scrollbar-track {
+    background: none;
+}
+
+.produtos__exibicao-conteudo::-webkit-scrollbar-thumb {
+    background: #797979c2;
+    border-radius: 50px;
+}
+
+.produtos__exibicao__container {
+    display: flex;
+    flex-direction: column;
+    background-color: #5D04D9;
+    border: solid 3px black;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+}
+
+.img__produto {
+    width: 200px;
+    height: 174px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.card_produto {
+    color: #fff;
+}
+
+.value__produto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.value__produto > p {
+    margin: 0;
+}
+
+.delete-button {
+    width: 24px;
+    height: 24px;
+    background: none;
+    border: none;
+}
+
+.delete-button:hover {
+    cursor: pointer;
+}
+
+.delete-button > img {
+    width: 24px;
+    height: 24px;
+}
+
+.produtos__adicionar {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.produtos__adicionar-texto {
+    text-align: center;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.produtos__adicionar input {
+    display: flex;
+    padding: 10px;
+    border: 3px solid #03318C;
+    width: 398px;
+    height: 58px;
+    border-radius: 100px;
+    gap: 5px;
+}
+
+::-webkit-input-placeholder {
+    color: #03318C;
+    gap: 5px;
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#button__guardar {
+    width: 185px;
+    height: 55px;
+    border-radius: 15px;
+    border: 0;
+    color: #fff;
+    background-color: #03318C;
+}
+
+#button__limpar {
+    width: 185px;
+    height: 55px;
+    border-radius: 15px;
+    border: 3px solid #03318C;
+    color: #03318C;
+    background-color: #fff;
+}
+
+footer {
+    display: flex;
+    padding: 44px;
+    justify-content: center;
+    background-color: #5300C8;
+    font-weight: 400;
+    color: #fff;
+}
+
+.footer_text {
+    margin: 0;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    font-family: "IBM Plex Mono";
+}
+
+@media (max-width: 1024px) {
+    .produtos__exibicao-conteudo{
+        grid-template-columns: repeat(2, 0fr);
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos {
+        flex-direction: column-reverse;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 425px) {
+    .produtos {
+        flex-direction: column-reverse;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .produtos__exibicao-conteudo{
+        grid-template-columns: repeat(1, 0fr);
+        justify-content: center;
+    }
+
+    .produtos__adicionar input {
+        height: auto;
+        width: auto;
+    }
+
+    .button {
+        gap: 16px;
+    }
+
+    #button__guardar {
+        height: 55px;
+        width: 50%;
+    }
+
+    #button__limpar {
+        height: 55px;
+        width: 50%;
+    }
+}

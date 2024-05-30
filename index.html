@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Alura Geek</title>
+</head>
+
+<body>
+    <header>
+        <img src="/assets/controle 1.png" alt="controle">
+        <img src="/assets/controle 2.png" alt="controle">
+        <p>AluraGeek</p>
+    </header>
+    <main>
+        <div class="produtos">
+            <div class="produtos__exibicao">
+                <p class="produtos__exibicao-texto">MEUS PRODUTOS:</p>
+                <div data-product class="produtos__exibicao-conteudo">
+                    
+                </div>
+            </div>
+            <div class="produtos__adicionar">
+                <p class="produtos__adicionar-texto">ADICIONAR PRODUTO:</p>
+                <form data-form>
+                    <input data-name type="text" placeholder="nome...">
+                    <input data-price type="text" placeholder="valor...">
+                    <input data-image type="text" placeholder="imagem...">
+                    <div class="button">
+                        <button id="button__guardar" type="submit">Guardar</button>
+                        <button id="button__limpar" type="reset">Limpar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <h3 class="footer_text">AluraGeek</h3>
+            <p class="footer_text">Desenvolvido por Eduardo Miguel</p>
+            <p class="footer_text">ALURA LATAM - 2024</p>
+        </div>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+
+</html>

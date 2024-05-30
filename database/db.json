@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "id": "e491",
+      "name": "halo",
+      "price": "37",
+      "image": "https://store-images.s-microsoft.com/image/apps.13367.13817186670444302.148c432a-9fce-4c7d-bf13-8a2bd3a527b3.f26b74f0-8b1f-41eb-a82f-06843ec33473"
+    },
+    {
+      "id": "8611",
+      "name": "grogu",
+      "price": "14",
+      "image": "https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2023/05/os-queridinhos-de-star-wars-lista-traz-produtos-mais-procurados-por-fas.jpg"
+    },
+    {
+      "id": "469b",
+      "name": "scooby doo",
+      "price": "79",
+      "image": "https://cdn.awsli.com.br/2500x2500/84/84034/produto/115503938/scoobydoo3-8tipal3t28.jpg"
+    },
+    {
+      "id": "6041",
+      "name": "luffy",
+      "price": "109",
+      "image": "https://m.media-amazon.com/images/I/41qZnS4GP6S._AC_.jpg"
+    }
+  ]
+}
